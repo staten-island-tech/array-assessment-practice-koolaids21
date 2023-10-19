@@ -100,3 +100,9 @@ const titles = [
 //was every book published within the last 100 years?
 
 //print a list of books that "includes" the genre historical
+
+const historicalBooks = books.filter(book => book.genre.includes("historical"));
+console.log("Books with the genre 'historical':", historicalBooks);
+
+const warAndPeaceAuthor = books.find(book => book.name === "War and Peace");
+console.log(`${warAndPeaceAuthor.authorFzzirst} ${warAndPeaceAuthor.authorLast} wrote War and Peace.`);
